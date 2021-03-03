@@ -34,7 +34,7 @@ header nav{
 
 header li{
     float: left;
-    display: inline;
+    display: inline-block;
     padding: 0 20px 0 20px;
 }
 
@@ -101,6 +101,7 @@ header a:hover{
     padding: 4px;
     height: 25px;
     width: 250px;
+    caret-color: red;
 }
 
 .btn-subs{
@@ -113,6 +114,7 @@ header a:hover{
 
 .boxes{
     margin-top: 30px;
+    padding-bottom: 100px;
 }
 
 .boxes .box{
@@ -126,6 +128,8 @@ header a:hover{
     width: 30%;
     height: 350px;
     padding: 10px;
+    position: relative;
+    top: -20px;
 }
 
 .boxes .box:hover{
@@ -169,6 +173,15 @@ footer{
         line-height: 55px;
     }
 
+    .showcase{
+        min-height: 400px;
+        background-image: url(img/showcase.png);
+        background-repeat: no-repeat;
+        background-position: 0 -70px;
+        text-align: center;
+        color: #ec1063;   
+    }
+
     .newslatter h1, form{
         width: 100%;
         text-align: center;
@@ -183,13 +196,65 @@ footer{
 
     .boxes .box{
         width: 85%;
+        height: 350px;
+        position: relative;
     }
 
     .boxes .box:hover{
-        background: linear-gradient(to right, #960083, #ec1063);
+        background-color: linear-gradient(to right, #960083, #ec1063);
         transition: 1s ease-out;
         color: white;
+        width: 85%;
+        height: 350px;
+    }
+}
+
+@media(max-width: 1024px){
+    header .branding,
+    header nav,
+    header nav li
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+        display: inline;
+        position: relative;
+        top: 0px;
+        line-height: 55px;
     }
 
+    .showcase{
+        min-height: 400px;
+        background-image: url(img/showcase.png);
+        background-repeat: no-repeat;
+        background-position: 0 -70px;
+        text-align: center;
+        color: #ec1063;   
+    }
 
+    .newslatter h1, form{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px auto;
+        font-size: 20px;
+    }
+
+    .btn-subs{
+        margin-top: 15px;
+        width: 250px;
+    }
+
+    .boxes .box{
+        width: 85%;
+        height: 350px;
+        position: relative;
+    }
+
+    .boxes .box:hover{
+        background-color: linear-gradient(to right, #960083, #ec1063);
+        transition: 1s ease-out;
+        color: white;
+        width: 85%;
+        height: 350px;
+    }
 }
