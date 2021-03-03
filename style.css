@@ -34,7 +34,7 @@ header nav{
 
 header li{
     float: left;
-    display: inline-block;
+    display: inline;
     padding: 0 20px 0 20px;
 }
 
@@ -179,6 +179,16 @@ footer{
     .btn-subs{
         margin-top: 15px;
         width: 250px;
+    }
+
+    .boxes .box{
+        width: 85%;
+    }
+
+    .boxes .box:hover{
+        background: linear-gradient(to right, #960083, #ec1063);
+        transition: 1s ease-out;
+        color: white;
     }
 
 
